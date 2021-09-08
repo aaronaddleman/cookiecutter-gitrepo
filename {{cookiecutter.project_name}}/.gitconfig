@@ -1,0 +1,4 @@
+[alias]
+	clean = git branch --merged | egrep -v "(^\*|{{ default_branch }})" | xargs git branch -d
+	st = status
+	ci = commit -v
